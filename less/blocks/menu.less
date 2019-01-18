@@ -1,0 +1,33 @@
+.menu {
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active,
+  &--accent {
+    color: @red;
+    .transition();
+  }
+}
