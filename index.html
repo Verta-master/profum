@@ -469,7 +469,14 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Заказать обратный звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__text" placeholder="Ваше имя">
+      <input type="tel" class="form__text" placeholder="Телефон">
+      <input type="checkbox" id="check" class="checkbox" checked>
+      <label for="check" class="checkbox__label">Я не робот</label>
+      <button type="submit" class="form__btn">Заказать</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>

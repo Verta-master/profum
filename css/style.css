@@ -1327,6 +1327,49 @@ button {
 .ui-widget.ui-widget-content {
   border: 0;
 }
+.form__text {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+.form__btn {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  font-weight: 700;
+  color: #ff0652;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.form__btn:hover,
+.form__btn:active {
+  background-color: red;
+  color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.modal {
+  max-width: 270px;
+  font-weight: 600;
+}
+.modal__title {
+  text-transform: uppercase;
+  text-align: center;
+}
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
