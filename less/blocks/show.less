@@ -24,7 +24,6 @@
 
 .show__slide {
   width: 272px;
-  min-height: 407px;
   border-radius: 25px;
   background-color: #fff;
   border: 1px solid rgb(232, 232, 232);
@@ -42,9 +41,11 @@
 }
 
 .show__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
-  height: 100%;
+  min-height: 407px;
 }
 
 .show__img {
@@ -56,8 +57,7 @@
 }
 
 .show__info {
-  padding: 30px;
-  padding-top: 0;
+  padding: 0 30px;
   
   p {
     margin-top: 5px;
@@ -78,8 +78,9 @@
 
 .show__more {
   margin: 0;
+  margin-top: auto;
   padding: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
