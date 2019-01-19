@@ -60,6 +60,7 @@
   <main>
     <div class="wrapper">
       <div class="columns columns--internal">
+        <button type="button" class="sidebar__btn">Фильтр</button>
         <nav class="sidebar sidebar--catalog">
           <ul class="sidebar__list">
             <li class="sidebar__active"><a href="#">женская парфюмерия</a></li>
@@ -536,7 +537,7 @@
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/range.js"></script>
 
-  <!-- Sliders -->
+  <!-- Slider -->
   <script>
     var mySwiper = new Swiper ('.slider', {
       pagination: {
@@ -546,6 +547,13 @@
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Sidebar -->
+  <script>
+    $('.sidebar__btn').click(function() {
+      $('.sidebar--catalog').slideToggle();
     });
   </script>
 </body>
