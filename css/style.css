@@ -628,6 +628,13 @@ button {
   padding-top: 22px;
   background-color: #fff;
 }
+.sidebar--catalog {
+  padding: 25px;
+  padding-top: 15px;
+}
+.sidebar--catalog .sidebar__list li {
+  margin-bottom: 15px;
+}
 .sidebar__title {
   margin-top: 0;
   font-size: 18px;
@@ -672,6 +679,30 @@ button {
 }
 .sidebar__slider .swiper-scrollbar-drag {
   background-color: #919191;
+}
+.sidebar__active {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sidebar__active::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 270px;
+  height: 50px;
+  background-color: #08090e;
+}
+.sidebar__active a:hover,
+.sidebar__active a:active {
+  color: #fff;
 }
 .slider .swiper-slide {
   height: 380px;
@@ -1039,6 +1070,230 @@ button {
 }
 .footer__block {
   width: 25%;
+}
+.form {
+  padding-top: 25px;
+}
+.form__field {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.form__field::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 270px;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.form__field:last-of-type::after {
+  display: none;
+}
+.checkbox {
+  display: none;
+}
+.checkbox__label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #919191;
+  letter-spacing: 0.05em;
+}
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 16px;
+  height: 17px;
+  border-radius: 2px;
+  border: 1px solid #919191;
+}
+.checkbox__label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkbox__label span {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 15px;
+  font-size: 10px;
+  color: #08090e;
+  letter-spacing: normal;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+}
+.checkbox:checked + .checkbox__label::before {
+  background-color: #08090e;
+  border-color: #08090e;
+}
+.checkbox:checked + .checkbox__label::after {
+  display: block;
+}
+.form__title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.form__title--red {
+  color: #ff0652;
+}
+.form__cancel {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #919191;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #919191;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.form__cancel::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #919191;
+  background-image: url(../img/icons/icon-cross.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px 7px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.form__cancel:hover,
+.form__cancel:active {
+  color: #ff0652;
+  border-color: #ff0652;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.form__cancel:hover::after,
+.form__cancel:active::after {
+  background-color: #ff0652;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.form__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.form__price span {
+  color: #666666;
+}
+.form__input {
+  width: 64px;
+  height: 20px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #e9e9e9;
+}
+.form__range {
+  width: 200px;
+}
+.ui-slider {
+  position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #919191;
+  cursor: pointer;
+  outline: none;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+  height: 5px;
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -3px;
+  margin-left: -8px;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+  border: 0;
+  background-color: #e9e9e9;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+  border: 1px solid #ff0652;
+  background-color: #ff0652;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+  border-radius: 2px;
+}
+.ui-widget.ui-widget-content {
+  border: 0;
 }
 @media (max-width: 1219px) {
   .wrapper {
