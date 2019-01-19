@@ -1,12 +1,12 @@
 .form {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .form__field {
   .reset();
   border: 0;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   
   &::after {
     content: "";
@@ -33,7 +33,7 @@
   position: relative;
   padding-left: 30px;
   padding-right: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 13px;
   color: #919191;
   letter-spacing: 0.05em;
@@ -65,7 +65,7 @@
   span {
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,11 +90,12 @@
 }
 
 .form__title {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   
   &--red {
     color: @red;
+    margin-bottom: 5px;
   }
 }
 
@@ -114,7 +115,7 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 25px;
+    margin-left: 15px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -144,7 +145,7 @@
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 13px;
   letter-spacing: 0.05em;
   
@@ -154,8 +155,10 @@
 }
 
 .form__input {
+  display: block;
   width: 64px;
   height: 20px;
+  line-height: 20px;
   text-align: center;
   border-radius: 2px;
   background-color: rgb(233, 233, 233);
