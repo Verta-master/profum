@@ -1671,6 +1671,12 @@ a.breadcrumbs__link:active::after {
   font-size: 18px;
   font-weight: 700;
 }
+.card__title a:hover,
+.card__title a:active {
+  color: #ff0652;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .card__id {
   font-size: 14px;
   color: #919191;
@@ -1818,6 +1824,184 @@ a.breadcrumbs__link:active::after {
 }
 .tabs__review {
   margin-bottom: 50px;
+}
+.basket table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+.basket table td {
+  vertical-align: top;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.basket .checkbox__label {
+  color: #08090e;
+}
+.basket__img {
+  width: 91px;
+}
+.basket__img img {
+  border: 1px solid #e8e8e8;
+}
+.basket__name {
+  width: 425px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.basket__name p {
+  margin: 0;
+}
+.basket__info {
+  width: 235px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+}
+.basket__number {
+  width: 165px;
+  padding-top: 10px;
+  text-align: center;
+}
+.basket__presence {
+  display: inline-block;
+  vertical-align: middle;
+  color: #919191;
+  position: relative;
+}
+.basket__presence::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+}
+.basket__presence--yes::after {
+  background-image: url(../img/icons/check-square.png);
+}
+.basket__presence--no::after {
+  border-radius: 50%;
+  background-color: #919191;
+  background-image: url(../img/icons/icon-cross.png);
+  background-position: center;
+}
+.basket__hidden {
+  display: none;
+}
+.basket__input {
+  width: 465px;
+  height: 38px;
+  padding-left: 45px;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+}
+.basket__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.basket__wrap .basket__input {
+  width: 46px;
+  height: 32px;
+  padding-left: 0;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.basket__arrow {
+  width: 25px;
+  height: 32px;
+  background-image: url(../img/icons/icon-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px 15px;
+}
+.basket__arrow--prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.basket__price {
+  padding-top: 24px;
+  text-align: right;
+}
+.basket__price span {
+  color: #b1b1b1;
+}
+.basket__price p {
+  font-size: 24px;
+}
+.basket__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.basket__apply {
+  width: 152px;
+  height: 38px;
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #08090e;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.basket__apply:hover,
+.basket__apply:active {
+  background-color: #ff0652;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.basket__code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+.basket__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+.basket__total b {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.basket__total span {
+  color: #919191;
+}
+.basket__sum {
+  font-size: 30px;
 }
 @media (max-width: 1219px) {
   .wrapper {
