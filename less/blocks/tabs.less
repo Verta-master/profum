@@ -1,7 +1,54 @@
-.tabs {
+.tabs__title {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(232, 232, 232);
   
+  .ui-tabs-active {
+    color: @red;
+  }
 }
 
-.tabs__title .ui-tabs-active {
-//  color: @red;
+.tabs__name {
+  margin-right: 100px;
+  font-size: 14px;
+  
+  a {
+    outline: none;
+  }
+}
+
+.tabs__field {
+  padding-top: 20px;
+  font-size: 14px;
+  
+  table {
+    td:first-child {
+      width: 125px;
+      color: #919191;
+    }
+  }
+  
+  .form {
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+  
+  time {
+    color: #919191;
+    font-size: 12px;
+  }
+}
+
+.tabs__name {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.tabs__review {
+  margin-bottom: 50px;
 }
