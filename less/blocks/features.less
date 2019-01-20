@@ -4,6 +4,23 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  
+  &--card {
+    margin-top: 45px;
+    
+    .features__item {
+      width: 32%;
+      padding: 0;
+      
+      &::before {
+        display: none;
+      }
+      
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 
 .features__item {
