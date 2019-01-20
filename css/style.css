@@ -772,6 +772,7 @@ button {
   width: 32%;
   padding: 0;
 }
+.features__list--card .features__item::after,
 .features__list--card .features__item::before {
   display: none;
 }
@@ -1685,7 +1686,7 @@ a.breadcrumbs__link:active::after {
 }
 .card__line--bottom {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #e9e9e9;
 }
 .card__input {
@@ -1695,6 +1696,7 @@ a.breadcrumbs__link:active::after {
   width: 62px;
   height: 62px;
   margin-right: 38px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1741,6 +1743,7 @@ a.breadcrumbs__link:active::after {
 .card__btn {
   width: 294px;
   height: 50px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1870,6 +1873,9 @@ a.breadcrumbs__link:active::after {
   .catalog__item {
     margin-right: 0;
   }
+  .card__info {
+    width: 435px;
+  }
 }
 @media (max-width: 1022px) {
   .footer__top {
@@ -1966,6 +1972,17 @@ a.breadcrumbs__link:active::after {
     margin-left: 0;
     margin-right: 25px;
   }
+  .card__wrap {
+    display: block;
+  }
+  .card__slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__info {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 766px) {
   .title {
@@ -2035,6 +2052,10 @@ a.breadcrumbs__link:active::after {
     display: none;
     margin-bottom: 20px;
   }
+  .card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (max-width: 480px) {
   .logo {
@@ -2085,5 +2106,34 @@ a.breadcrumbs__link:active::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .card__slider {
+    width: 100%;
+  }
+  .card__gallery {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card__thumbnail {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .features__list--card {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .features__list--card .features__item {
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features__list--card .features__item img {
+    height: 32px;
+    width: auto;
   }
 }
