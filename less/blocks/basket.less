@@ -1,18 +1,20 @@
 .basket {
   table {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     border-collapse: collapse;
     
     td {
       vertical-align: top;
-      padding-top: 40px;
-      padding-bottom: 60px;
+      padding-top: 45px;
+      padding-bottom: 45px;
       border-bottom: 1px solid #e8e8e8;
     }
   }
   
   .checkbox__label {
+    padding-left: 40px;
+    margin-bottom: 28px;
     color: #08090e;
   }
 }
@@ -21,6 +23,8 @@
   width: 91px;
   
   img {
+    width: 100%;
+    height: auto;
     border: 1px solid #e8e8e8;
   }
 }
@@ -39,13 +43,21 @@
   width: 235px;
   padding-left: 35px;
   padding-right: 35px;
-  padding-top: 10px;
+  
+  p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .basket__number {
   width: 165px;
-  padding-top: 10px;
   text-align: center;
+  
+  p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 .basket__presence {
@@ -117,10 +129,11 @@
 }
 
 .basket__price {
-  padding-top: 24px;
   text-align: right;
   
   span {
+    display: block;
+    margin-top: 25px;
     color: #b1b1b1;
   }
   
@@ -130,6 +143,7 @@
 }
 
 .basket__title {
+  margin-bottom: 30px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -157,7 +171,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .basket__total {
