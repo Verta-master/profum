@@ -2193,6 +2193,12 @@ a.breadcrumbs__link:active::after {
     width: 100%;
     margin-bottom: 50px;
   }
+  .basket table {
+    display: block;
+  }
+  .basket table tbody {
+    display: block;
+  }
   .basket table tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2208,6 +2214,7 @@ a.breadcrumbs__link:active::after {
     border-bottom: 1px solid #e8e8e8;
   }
   .basket table td {
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 0;
